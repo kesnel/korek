@@ -27,18 +27,21 @@
     --co-text-fade: #696f7c;
 
 /** Backgrounds  **/
-    --bg-fade: #eceff8;
+    --co-fade: rgb(219, 243, 255);
+    --co-1-fade: rgb(218, 255, 230);
+    --bg-fade: #f5f5f5;
 
     --gd: linear-gradient(90deg,var(--co), var(--co-1));
     --gd-reverse: linear-gradient(90deg,var(--co-1), var(--co));
+
+    --gd-fade: linear-gradient(90deg,var(--co-fade), var(--co-1-fade));
+    --gd-fade-reverse: linear-gradient(90deg,var(--co-1-fade), var(--co-fade));
 
 
     --shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
 /** Borders **/
-    --co-bdr: #d8d8d875;
-    --co-bdr-fade: #34343b3f;
-    --co-bdr-dark: #34343b0e;
+    --co-bdr: #f0f2f5;
 
 /** Fonts Text **/
     --f: 'Mulish', var(--f-variables);
