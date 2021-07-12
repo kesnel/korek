@@ -1,0 +1,123 @@
+/*  */
+.hdr-app{
+    width: 100%;
+}
+
+/*  */
+.banner{
+    width: 100%;
+    height: 650px;
+
+    background: var(--bg-fade);
+}
+
+.banner .ova{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .ova::before{
+    background: url('../../media/img/svg/maths.png');
+    background-position: left;
+    background-size: 40%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+
+    height: 100%;
+    width: 100%;
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    opacity: .05;
+}
+
+.banner .container{
+    position: relative;
+}
+
+.banner .banner-center{
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+.banner-content{
+    width: 60%;
+
+    background: var(--co-white);
+
+    padding: 45px 50px;
+    border-radius: 10px;
+}
+
+.hero-txt{
+    line-height: 1.1;
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.hero-cc{
+    font-size: 1.2em;
+    line-height: 1.34;
+    padding-top: 25px;
+    font-weight: 300;
+
+    color: var(--co-text-fade);
+}
+
+.hero-end{
+    padding-top: 35px;
+}
+
+.hero-btn{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+    background: var(--co);
+    font-weight: 700;
+    color: var(--co-white);
+
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+.hero-btn:hover{
+    background: var(--gd-reverse);
+}
+
+.hero-log{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.hero-ca .break{
+    font-weight: 500;
+}
+
+.hero-ca .break:hover{
+    color: var(--co);
+}
+
+
+
+.banner-hero{
+    height: auto;
+
+    display: block;
+
+    width: 400px;
+    bottom: 0;
+    right: 0;
+
+    position: absolute;
+
+    pointer-events: none;
+}

@@ -1,0 +1,174 @@
+*:focus,
+button:active {
+  /* Transition */
+  transition: 0s!important;
+
+  /* Visible in the full-colour space */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, .5);
+
+  /* Visible in Windows high-contrast themes */
+  outline: none;
+}
+
+*:active {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within,
+html {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -o-scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  color: var(--co-text);
+
+  text-rendering: optimizeSpeed;
+
+  font-family: var(--f);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+
+  word-spacing: 0px;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  cursor: pointer;
+}
+
+a,
+p a{
+  color: inherit;                                                                     
+  text-decoration: none;
+  background-color: transparent;
+
+  -webkit-text-decoration-skip: objects; 
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+
+a, 
+a:hover, 
+a:active, 
+a:link
+{
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+ul, li, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="button"],
+input[type="submit"],
+button{
+  cursor: pointer;
+}
+
+input::placeholder{
+  color: var(--placeholder);
+}
+
+input[type="search"]::-webkit-search-cancel-button{
+  display: none;
+  visibility: hidden;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.clear{
+  clear: both;
+}

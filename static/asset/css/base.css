@@ -1,0 +1,66 @@
+/* Import requirements css styles */
+@import url('../css/reset.css');
+@import url('../css/punaise.css');
+
+/* Import pages stylesheets */
+@import url('../style/main.css');
+
+/** Webfonts **/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/** Pages **/
+@import url('../style/index.css');
+
+:root{
+/** Color Principal **/ 
+    --co: #00A0F6;
+    --co-1: #00EC50;
+
+/** Additional Colors **/
+    --co-select: #dd2481;
+    --co-white: #fff;
+    --co-black: #000;
+    --html-bg: var(--co-white);
+
+/** Color Text **/
+    --co-text: #2d3a58;
+    --co-text-fade: #696f7c;
+
+/** Backgrounds  **/
+    --bg-fade: #eceff8;
+
+    --gd: linear-gradient(90deg,var(--co), var(--co-1));
+    --gd-reverse: linear-gradient(90deg,var(--co-1), var(--co));
+
+
+    --shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+/** Borders **/
+    --co-bdr: #d8d8d875;
+    --co-bdr-fade: #34343b3f;
+    --co-bdr-dark: #34343b0e;
+
+/** Fonts Text **/
+    --f: 'Mulish', var(--f-variables);
+    --f-bold: 'Mulish', var(--f-variables);;
+    --f-variables: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+}
+
+.html-bg{
+    background: var(--html-bg);
+}
+
+/** Layout **/
+
+.container{
+    margin: 0 auto;
+    height: 100%;
+    width: 1100px;
+}
+
+@media (max-width: 1100px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
