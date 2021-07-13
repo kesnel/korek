@@ -413,6 +413,10 @@
    padding: 30px 30px 30px 45px;
    position: relative;
    border-radius: 10px;
+
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+   margin: 40px 0;
 }
 
 .dSkBx .kBi{
@@ -440,6 +444,11 @@
     margin: 0 auto;
 
     width: 100%;
+}
+
+.dSkBx .kBfo .KBic1{
+    font-weight: 700;
+    padding-bottom: 5px;
 }
 
 /* Section Testimony */
