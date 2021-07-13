@@ -8,7 +8,6 @@
     border-bottom: 1px solid var(--co-bdr);
 }
 
-
 .hdr-flx{
     width: 100%;
     height: 100%;
@@ -29,31 +28,34 @@
 .log-a{
     display: block;
 
-    padding: 7px 15px;
+    padding: 7px 20px;
 
-    font-weight: 600;
-    width: 150px;
+    font-weight: 800;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 3px;
 
+    background: var(--gd-fade);
+}
+
+.log-a:hover{
     background: var(--gd);
-    color: var(--co-white);
 }
 
 /*  */
-.banner{
-    width: 100%;
-    height: 450px;
-    background: var(--gd-fade-reverse);
-}
 
-.banner .ova{
+.bg-maths{
     position: relative;
-    width: 100%;
-    height: 100%;
 }
 
-.banner .ova::before{
+.bg-maths::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    opacity: .04;
+
     background: url('../../media/img/svg/maths.png');
     background-position: left;
     background-size: 40%;
@@ -62,14 +64,27 @@
 
     height: 100%;
     width: 100%;
+}
+
+.bg-maths-ova{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-maths-ova::before{
+    height: 100%;
+    width: 100%;
 
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    
+    background: var(--gd);
 
-    opacity: .04;
+    opacity: .2;
 }
 
 .banner .container{
@@ -85,6 +100,8 @@
 
 .banner-content{
     width: 50%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .hero-txt{
@@ -112,48 +129,33 @@
 
 .hero-btn{
     display: inline-block;
-    width: 200px;
+    width: 100%;
     text-align: center;
 
-    background:transparent;
-    border: 1px solid  var(--co-text);
+    background: var(--gd);
     font-weight: 700;
-    color:  var(--co-text);
 
-    padding: 7px 30px;
+    padding: 10px 30px;
 
     border-radius: 5px;
-}
-
-.rtn1{
-    background: var(--co);
     color: var(--co-white);
-    border-color: var(--co);
-}
-
-.rtn2{
-    color: var(--co);
-    border-color: var(--co);
 }
 
 .hero-btn:hover{
-    opacity: .9;
+    background: var(--gd-reverse);
 }
 
 .hero-log{
     padding-top: 15px;
-    text-align: center;
 }
 
 .hero-ca .break{
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .hero-ca .break:hover{
-    color: var(--co);
+    text-decoration: underline;
 }
-
-
 
 .banner-hero{
     height: auto;
@@ -172,7 +174,7 @@
 
 /* Section Zone */
 .Aba{
-    background: var(--bg-fade);
+    border-bottom: 1px solid var(--co-bdr);
 }
 
 .tAbac{
@@ -203,6 +205,10 @@
     background: var(--gd-fade);
 }   
 
+.Abb{
+    background: var(--bg-fade);
+}
+
 .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -226,26 +232,30 @@
 .Ab-Box .Ab-Stat{
     font-weight: 900;
     font-size: 2em;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
 .Ab-Box .Ab-Stat-c{
-    font-weight: 700;
+    font-weight: 600;
+    padding-top: 2px;
+    opacity: .7;
 }
 
 .Ab-Box .bt{
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding-top: 6px;
 }
 
 .btL{
     display: inline-block;
     padding: 1px 17px 1px 0;
 
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 16px;
     color: var(--co);
 
     position: relative;
+
+    margin-top: 10px;
 }
 
 .btL:hover{
@@ -284,10 +294,83 @@
     padding-top: 5px;
 }
 
-/* Section C */
+/* Section About */
+.Abe{
+    width: 100%;
+}
 
-.Abc{
+.AbeM{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AbeCov{
+    width: 50%;
+}
+
+.AbeCov img{
+    height: auto;
+    width: 100%;
+}
+
+.AbeFo{
+    width: 45%;
+}
+
+.AbeFo .AbeBx:not(:last-child){
+    padding-bottom: 23px;
+}
+
+.AbeLiBx{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.AbeLiBx .AbelTc{
+    align-items: center;
+}
+
+.AbeLiBx .AbelTc .svg{
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
     background: var(--gd);
+
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 10px;
+}
+
+.AbeLiBx .AbelTc .svg svg{
+    width: 60%;
+    height: 60%;
+}
+
+.AbeLiBx .AbelTc .svg svg path{
+    fill:  var(--co-white);
+}
+
+.AbeLiBx .AbelTr{
+    color: var(--co-text-fade);
+}
+
+.AbeFo .TiH{
+    font-weight: 700;
+    font-size: 23px;
+    padding-bottom: 3px;
+}
+
+/* Section Testimony */
+.Abc{
+    position: relative;
+
+    background: var(--gd);
+}
+
+.Abc::before{
+    opacity: .1;
 }
 
 .badge-bg{
@@ -461,15 +544,57 @@
 
 /* Section Final */
 
-.Abd{
+.Abd-ova::before{
     background: var(--gd-reverse);
-    height: 200px;
 }
 
 .Abd-Box{
     width: 100%;
 
-    border-radius: 50px
+    padding: 50px;
+
+    background: var(--co-white);
+
+    border-radius: 10px;
+
+    position: relative;
+    top: -65px;
+
+    display: block;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px 0px;
+}
+
+.Abd-Box .SDSax{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Abd-Box .left{
+    width: 50%;
+}
+
+.Abd-Box .ClTc{
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.Callb{
+    display: block;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 800;
+    border-radius: 5px;
+    color: var(--co-white);
+    background: var(--gd);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.Callb:hover{
+    background: var(--gd-reverse);
 }
 
 /* Footer */
