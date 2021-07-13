@@ -170,7 +170,6 @@
     pointer-events: none;
 }
 
-
 /* Section Zone */
 .Aba{
     background: var(--bg-fade);
@@ -336,7 +335,7 @@
 }
 
 .Abc-Box .AbcBfo{
-    padding: 15px;
+    padding: 20px 20px 30px 20px;
 }
 
 .Folbl{
@@ -367,4 +366,148 @@
     font-weight: 500;
     line-height: 1.2;
     width: 76%;
+}
+
+/* Faq */
+
+.FAQi{
+    padding-top: 50px;
+    position: relative;
+}
+
+.FAQMFX{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FAQMG{
+    width: 50%;
+    margin-right: auto;
+}
+
+.FAQMG .FAQIMG{
+    width: 100%;
+    height: auto;
+}
+
+.FAQUST{
+    width: 47%;
+    padding-top: 20px;
+}
+
+.FAQl{
+    border-radius: 10px;
+
+    padding: 20px 20px;
+
+    background: var(--co-white);
+
+    border: 1px solid var(--co-bdr);
+
+    margin-left: auto;
+
+    box-shadow: 0px 5px 0px var(--co-fade);
+}
+
+.faqUL li {
+    position: relative;
+}
+
+.faqUL .svgq1{
+    transition: 200ms all ease-in-out;
+}
+
+.faqUL .svgq1 .svgq1s{
+    width: 10px;
+    height: 10px;
+}
+
+.FAQBXd .dis-flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqUL .FAQBXd:not(:last-child){
+    border-bottom: 1px #f5f5f5 solid;
+}
+
+.faqUL .FAQBXd .FAQlq1{
+    cursor: pointer;
+    padding: .8em 15px; 
+}
+
+.faqUL .FAQBXd .txtq1x{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.faqUL .FAQl1a {
+    color: var(--co-text-fade);
+    background: #fff;
+    display: none;
+    padding: 0 15px .8em 15px; 
+}
+
+.FAQlq1.expand{
+    border-bottom: 1px transparent solid!important;
+}
+
+.FAQlq1.expand .svgq1{
+    transform: rotate(180deg);
+
+    transition: 200ms all ease-in-out;
+}
+
+
+/* Section Final */
+
+.Abd{
+    background: var(--gd-reverse);
+    height: 200px;
+}
+
+.Abd-Box{
+    width: 100%;
+
+    border-radius: 50px
+}
+
+/* Footer */
+
+.footer{
+    padding: 20px 0;
+}
+
+.Fflx{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyCC{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer .sc{
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+}
+
+.footer .sc:hover svg path{
+    fill: var(--co);
+}
+
+.footer .sc:not(:last-child){
+    margin-right: 10px;
+}
+
+.footer .sc svg{
+    width: 18px;
+    height: 18px;
+}
+
+.footer .sc svg path{
+    fill: var(--co-text-fade);
 }
