@@ -1,13 +1,49 @@
 /*  */
 .hdr-app{
     width: 100%;
+    height: 75px;
+
+    position: relative;
+
+    border-bottom: 1px solid var(--co-bdr);
+}
+
+
+.hdr-flx{
+    width: 100%;
+    height: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img{
+    width: 70px;
+    height: auto;
+}
+
+.log-a:not(:last-child){
+    margin-right: 5px;
+}
+
+.log-a{
+    display: block;
+
+    padding: 7px 15px;
+
+    font-weight: 600;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+
+    background: var(--gd);
+    color: var(--co-white);
 }
 
 /*  */
 .banner{
     width: 100%;
-    height: 650px;
-
+    height: 450px;
     background: var(--gd-fade-reverse);
 }
 
@@ -33,7 +69,7 @@
     left: 0;
     right: 0;
 
-    opacity: .05;
+    opacity: .04;
 }
 
 .banner .container{
@@ -48,19 +84,12 @@
 }
 
 .banner-content{
-    width: 60%;
-
-    background: var(--co-white);
-
-    padding: 45px 50px;
-    border-radius: 10px;
-    
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 50%;
 }
 
 .hero-txt{
     line-height: 1.1;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 800;
 }
 
@@ -77,22 +106,38 @@
     padding-top: 35px;
 }
 
+.hero-btn:not(:last-child){
+    margin-right: 5px;
+}
+
 .hero-btn{
     display: inline-block;
-    width: 100%;
+    width: 200px;
     text-align: center;
 
-    background: var(--gd);
+    background:transparent;
+    border: 1px solid  var(--co-text);
     font-weight: 700;
-    color: var(--co-white);
+    color:  var(--co-text);
 
-    padding: 10px;
+    padding: 7px 30px;
 
     border-radius: 5px;
 }
 
+.rtn1{
+    background: var(--co);
+    color: var(--co-white);
+    border-color: var(--co);
+}
+
+.rtn2{
+    color: var(--co);
+    border-color: var(--co);
+}
+
 .hero-btn:hover{
-    background: var(--gd-reverse);
+    opacity: .9;
 }
 
 .hero-log{
@@ -115,11 +160,211 @@
 
     display: block;
 
-    width: 400px;
+    width: auto;
+    height: 90%;
     bottom: 0;
     right: 0;
 
     position: absolute;
 
     pointer-events: none;
+}
+
+
+/* Section Zone */
+.Aba{
+    background: var(--bg-fade);
+}
+
+.tAbac{
+    font-weight: 500;
+}
+
+.list-sko{
+    justify-content: center;
+    align-items: center;
+}
+
+.list-sko .sko-img{
+    width: auto;
+    height: 80px;
+    margin: 0 8px;
+}
+
+/* Section 2 */
+
+.highlighted{
+    display: inline-block;
+    padding: 1px 20px 1px 20px;
+    font-weight: 800;
+}
+
+.highlighted-co{
+    color: var(--co);
+    background: var(--gd-fade);
+}   
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: space-between;
+}
+
+.AbLflx{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AbLflx .left{
+    width: 50%;
+}
+
+.Ab-Box{
+    display: block;
+}
+
+.Ab-Box .Ab-Stat{
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 1.2;
+}
+
+.Ab-Box .Ab-Stat-c{
+    font-weight: 700;
+}
+
+.Ab-Box .bt{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.btL{
+    display: inline-block;
+    padding: 1px 17px 1px 0;
+
+    font-weight: 700;
+    color: var(--co);
+
+    position: relative;
+}
+
+.btL:hover{
+    text-decoration: underline;
+}
+
+.btL::before{
+    content: ">";
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.AbLflx .right{
+    width: 50%;
+    position: relative;
+}
+
+.AbLflx .right .Ab-img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.AbHc{
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.AbHv{
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+/* Section C */
+
+.Abc{
+    background: var(--gd);
+}
+
+.badge-bg{
+    color: var(--co-white);
+    text-align: center;
+
+    padding-bottom: 30px;
+}
+
+.AbcFlx{
+    justify-content: space-between;
+}
+
+.Abc-CarouFx{
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+.Abc-Box{
+    width: 350px;
+
+    display: block;
+
+    overflow: hidden;
+
+    border-radius: 5px;
+
+    background: var(--co-white);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.AbcBcv{
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+}
+
+.AbcBcv .AbcBcImg{
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.Abc-Box .AbcBfo{
+    padding: 15px;
+}
+
+.Folbl{
+    display: block;
+    width: 50px;
+    height: 3px;
+
+    background: var(--gd);
+
+    margin-bottom: 20px;
+    margin-top: 15px;
+
+    border-radius: 30px;
+}
+
+.FoEnd{
+    padding-top: 30px;
+}
+
+.Fo-N{
+    font-weight: 700;
+    color: var(--co);
+}
+
+.Fo-T{
+    font-size: 16px;
+    color: var(--co-text-fade);
+    font-weight: 500;
+    line-height: 1.2;
+    width: 76%;
 }
