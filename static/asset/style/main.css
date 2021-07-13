@@ -327,33 +327,39 @@
 }
 
 .AbeLiBx .AbelTc{
-    align-items: center;
+    align-items: flex-start;
 }
 
 .AbeLiBx .AbelTc .svg{
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
+
+    top: 4px;
+    position: relative;
 
     border-radius: 50%;
-    background: var(--gd);
+    background: var(--gd-fade);
 
     align-items: center;
     justify-content: center;
 
-    margin-right: 10px;
+    margin-right: 14px;
+
+    opacity: .7;
 }
 
 .AbeLiBx .AbelTc .svg svg{
-    width: 60%;
-    height: 60%;
+    width: 46%;
+    height: 46%;
 }
 
 .AbeLiBx .AbelTc .svg svg path{
-    fill:  var(--co-white);
+    fill:  var(--co);
 }
 
 .AbeLiBx .AbelTr{
     color: var(--co-text-fade);
+    margin-left: 40px;
 }
 
 .AbeFo .TiH{
