@@ -5,7 +5,7 @@
 
     position: relative;
 
-    border-bottom: 1px solid var(--co-bdr);
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
 .hdr-flx{
@@ -28,18 +28,21 @@
 .log-a{
     display: block;
 
-    padding: 7px 20px;
+    padding: 7px 17px;
 
     font-weight: 800;
     font-size: 17px;
     text-align: center;
     border-radius: 3px;
 
+    transition: 0s all!important;
+
     background: var(--gd-fade);
 }
 
 .log-a:hover{
     background: var(--gd);
+    color: var(--co-white);
 }
 
 /*  */
@@ -296,8 +299,10 @@
 }
 
 /* Section About */
+
 .Abe{
     width: 100%;
+    position: relative;
 }
 
 .AbeM{
@@ -369,7 +374,50 @@
     padding-bottom: 3px;
 }
 
+/* Section Objectif */
+
+.bvg{
+    display: block;
+    width: 100%;
+    height: 50px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bvg svg{
+    width: 100%;
+    height: 100%;
+}
+
+.bvg.gray svg path{
+    fill:  var(--bg-fade);
+}
+
+.bvg.white svg path{
+    fill:  var(--co-white);
+}
+
+.Abz{
+    width: 100%;
+    height: 560px;
+
+    position: relative;
+
+    background: var(--bg-fade);
+}
+
+.gridSk{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: space-between;
+}
+
 /* Section Testimony */
+
 .Abc{
     position: relative;
 
@@ -547,7 +595,6 @@
 
     transition: 200ms all ease-in-out;
 }
-
 
 /* Section Final */
 
