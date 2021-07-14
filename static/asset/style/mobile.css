@@ -4,6 +4,10 @@
         font-size: 16px;
     }
 
+    section .container{
+        padding: 0 30px;
+    }
+
     /* Header */
     .hdr-app{
         height: 60px;
@@ -40,21 +44,106 @@
     .hero-end{
         padding-top: 30px;
     }
-    .hero-btn{
-        padding: 5px 30px;
-    }
-
 
     /* Section Patners */
     .tAbac{
-        font-size: 100%;
+        font-size: 18px;
         line-height: 1.2;
     }
     .list-sko{
         overflow: scroll;
+        padding-top: 16px;
     }
     .list-sko .sko-img{
-        height: 40px;
+        height: 50px;
         margin: 0 5px;
+    }
+
+    /* Highleted */
+    .AbHc{
+        font-size: 1.6em;
+    }
+    .AbHv{
+        font-weight: 500;
+        padding-top: 5px;
+        font-size: 17px;
+    }
+    .highlighted{
+        display: inline-block;
+        padding: 1px 10px 1px 10px;
+        font-weight: 800;
+    }
+
+    .highlighted-co{
+        color: var(--co);
+        background: var(--gd-fade);
+    }   
+
+    /* Section About */
+    .Abb{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .AbLflx{
+        display: block;
+    }
+    .AbLflx .left{
+        width: 100%;
+    }
+    .Ab-Box .Ab-Stat{
+        font-weight: 800;
+        font-size: 1.4em;
+    }
+    .btL{
+        font-size: 15px;
+    }
+    .AbLflx .right{
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    /* Section About 2 */
+    .AbeM{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .AbeCov{
+        width: 100%;
+    }
+    .AbeFo{
+        width: 100%;
+    }
+
+    /* Objectif */
+    .Abz{
+        padding-top: 24px;
+        padding-bottom: 10px;
+    }
+    .dSkBx{
+        margin: 50px 0;
+        padding: 45px 20px 20px 20px;
+        text-align: center;
+    }
+    .dSkBx .kBi{
+        left: 50%;
+        transform: translateX(-50%);
+        top: -20px;
+    }
+
+    /* Testimonials */
+    .badge-bg{
+    }
+    .Abc-CarouFx{
+        display: block;
+    }
+    .Abc-Box{
+        width: 100%;
+        box-shadow: none;
+    }
+    .Abc-Box .AbcBcv{
+        height: auto;
+    }
+    .Abc-Box:not(:last-child){
+        margin-bottom: 25px;
     }
 }
