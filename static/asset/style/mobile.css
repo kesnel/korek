@@ -146,4 +146,48 @@
     .Abc-Box:not(:last-child){
         margin-bottom: 25px;
     }
+
+    /* FAQ */
+    .FAQi{
+        padding-top: 10px;
+    }
+    .FAQMFX{
+        flex-wrap: wrap-reverse;
+        padding-top: 30px;
+    }
+    .FAQUST{
+        width: 100%;
+        padding-bottom: 36px;
+    }
+    .FAQMG{
+        width: 100%;
+    }
+
+    /* Final */
+    .Abd-Box .SDSax{
+        flex-wrap: wrap;
+        display: block;
+    }
+    .Abd-Box .left{
+        padding-bottom: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .Abd-Box .ClTc{
+        font-size: 1.7em;
+    }
+    .Callb{
+        width: 100%;
+    }
+
+    /* Footer */
+    .Fflx{
+        display: block;
+        text-align: center;
+    }
+    .footer .social{
+        padding-top: 12px;
+        justify-content: center;
+        width: 100%;
+    }
 }
