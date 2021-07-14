@@ -1,0 +1,60 @@
+@media (max-width: 768px) {
+
+    body{
+        font-size: 16px;
+    }
+
+    /* Header */
+    .hdr-app{
+        height: 60px;
+    }
+    .logo-img{
+        width: 50px;
+    }
+    .log-a{
+        font-size: 15px;
+        padding: 5px 14px;
+    }
+
+
+    /* Banner */
+    .banner-content{
+        width: 100%;
+        padding-top: 15%;
+        padding-bottom: 13%;
+        display: block;
+    }
+    .banner-hero{
+        display: none;
+    }
+    .hero-txt{
+        line-height: 1.1;
+        font-size: 35px;
+        font-weight: 800;
+    }
+    .hero-cc{
+        font-size: 1em;
+        line-height: 1.32;
+        padding-top: 12px;
+    }
+    .hero-end{
+        padding-top: 30px;
+    }
+    .hero-btn{
+        padding: 5px 30px;
+    }
+
+
+    /* Section Patners */
+    .tAbac{
+        font-size: 100%;
+        line-height: 1.2;
+    }
+    .list-sko{
+        overflow: scroll;
+    }
+    .list-sko .sko-img{
+        height: 40px;
+        margin: 0 5px;
+    }
+}

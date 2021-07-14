@@ -45,7 +45,7 @@
     color: var(--co-white);
 }
 
-/*  */
+/* Bg Maths Defaults  */
 
 .bg-maths{
     position: relative;
@@ -91,6 +91,8 @@
     opacity: .2;
 }
 
+/* Banner */
+
 .banner .container{
     position: relative;
 }
@@ -125,10 +127,6 @@
 
 .hero-end{
     padding-top: 35px;
-}
-
-.hero-btn:not(:last-child){
-    margin-right: 5px;
 }
 
 .hero-btn{
@@ -177,6 +175,7 @@
 }
 
 /* Section Zone */
+
 .Aba{
     border-bottom: 1px solid var(--co-bdr);
 }
@@ -633,6 +632,12 @@
 
 /* Section Final */
 
+.Abd::before{
+    background-position: center left;
+    background-size: 30%;
+    opacity: .1;
+}
+
 .Abd-ova::before{
     background: var(--gd-reverse);
 }
@@ -651,7 +656,7 @@
 
     display: block;
 
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 .Abd-Box .SDSax{
